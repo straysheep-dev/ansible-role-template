@@ -20,7 +20,7 @@ on:
     branches: ["main"]
 defaults:
   run:
-    working-directory: '${role_name}'
+    working-directory: 'role_name'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: ${role_name}
+          path: role_name
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip ansible molecule molecule-plugins[docker] docker
