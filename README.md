@@ -3,6 +3,9 @@ ${role_name}
 
 A brief description of the role goes here.
 
+> [!NOTE]
+> To update submodules in this template, do: `git submodule update --init --recursive`
+
 Requirements
 ------------
 
