@@ -1,10 +1,14 @@
 ${role_name}
 =========
 
+![molecule workflow](https://github.com/straysheep-dev/ansible-role-template/actions/workflows/molecule.yml/badge.svg) ![ansible-lint workflow](https://github.com/straysheep-dev/ansible-role-template/actions/workflows/ansible-lint.yml/badge.svg)
+
 A brief description of the role goes here.
 
 > [!NOTE]
-> To update submodules in this template, do: `git submodule update --init --recursive`
+> 1. To update submodules in this template, do: `git submodule update --init --recursive`
+> 2. Replace all instances of `${role_name}` or `role_name`
+> 3. Replace all instances of `ansible-role-template` with `ansible-role-<role_name>`
 
 Requirements
 ------------
