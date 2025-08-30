@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: MIT
 galaxy_info:
   author: straysheep-dev
+  namespace: straysheep_dev
+  role_name: role_name
   description: your role description
   # company: your company (optional)
 
