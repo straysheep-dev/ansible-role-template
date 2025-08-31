@@ -7,7 +7,7 @@ A brief description of the role goes here.
 
 > [!NOTE]
 > 1. To update submodules in this template, do: `git submodule update --init --recursive`
-> 2. Replace all instances of `role_name` with the actual `role_name`.
+> 2. Replace all instances of `role_name` with the actual `role_name`, **EXCEPT FOR `role_name_check: 1` in `molecule.yml`**
 > 3. Replace all instances of `ansible-role-template` with `ansible-role-<role_name>`
 
 Requirements
