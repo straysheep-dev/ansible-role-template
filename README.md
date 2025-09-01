@@ -6,9 +6,10 @@ role_name
 A brief description of the role goes here.
 
 > [!NOTE]
-> 1. To update submodules in this template, do: `git submodule update --init --recursive`
+> 1. To initialize submodules in this template, do: `git submodule update --init --recursive`
 > 2. Replace all instances of `role_name` with the actual `role_name`, **EXCEPT FOR `role_name_check: 1` in `molecule.yml`**
 > 3. Replace all instances of `ansible-role-template` with `ansible-role-<role_name>`
+> 4. To update submodules, do: `git submodule update --remote --recursive`, see [straysheep.dev/blog/resources/#git](https://straysheep.dev/blog/2019/07/15/-resources/#git)
 
 > [!IMPORTANT]
 > **Git Submodules & CI**: The dockerfiles for molecule tests are maintained in a [monorepo](https://github.com/straysheep-dev/docker-configs) as submodules for maintainability / repeatability across all roles. Because of this, the CI workflow requires `actions/checkout` to have `submodules: 'recursive'`.
