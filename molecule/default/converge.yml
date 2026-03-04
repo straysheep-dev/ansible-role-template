@@ -11,7 +11,7 @@
   gather_facts: true
   pre_tasks:
     # This block was taken directly from: https://github.com/geerlingguy/ansible-role-docker/blob/master/molecule/default/converge.yml#L6
-    - name: Wait for systemd to complete initialization  # noqa 303
+    - name: Wait for systemd to complete initialization  # noqa command-instead-of-module
       command: systemctl is-system-running
       register: systemctl_status
       until: >

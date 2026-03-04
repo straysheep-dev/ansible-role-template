@@ -14,6 +14,13 @@ A brief description of the role goes here.
 > [!IMPORTANT]
 > **Git Submodules & CI**: The dockerfiles for molecule tests are maintained in a [monorepo](https://github.com/straysheep-dev/docker-configs) as submodules for maintainability / repeatability across all roles. Because of this, the CI workflow requires `actions/checkout` to have `submodules: 'recursive'`.
 
+> [!TIP]
+> For local development, don't forget to symlink your `<namespace>.<role_name>` to one of the paths Ansible expects roles to exist under. This is the alternative to using a relative file path in `molecule/converge.yml`.
+>
+> ```bash
+> ln -s ~/src/ansible-role-role_name ~/.ansible/roles/<namespace>.role_name
+> ```
+
 Requirements
 ------------
 
