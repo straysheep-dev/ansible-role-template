@@ -11,7 +11,7 @@ profile: safety
 # - https://github.com/ansible/ansible-lint/pull/1425
 # - https://github.com/ansible/ansible-lint/discussions/1424
 exclude_paths:
-  - .cache/ # implicit unless exclude_paths is defined in config
+  - .cache/  # implicit unless exclude_paths is defined in config
   - .git/                     # always ignore
   - .github/                  # always ignore
   - "tests/"                  # ignore tests/ folder
