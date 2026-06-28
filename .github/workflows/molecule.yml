@@ -30,13 +30,19 @@ jobs:
         with:
           path: role_name
           submodules: recursive
+      - uses: actions/setup-python@v6
+        # with:
+        #   python-version: '3.14'
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip ansible molecule molecule-plugins[docker] docker
       - name: Test with molecule
         run: |
+          cat /etc/os-release
+          molecule --version
           docker info
           molecule test -d docker
         env:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
+          # ANSIBLE_INJECT_INVOCATION: 'true'  # https://github.com/ansible/ansible/issues/86758

@@ -65,6 +65,8 @@ platforms:
     dockerfile: docker-configs/dockerfiles-rocky/rocky-9.Dockerfile
 provisioner:
   name: ansible
+  env:
+    ANSIBLE_INJECT_INVOCATION: "true"  # https://github.com/ansible/ansible/issues/86758
   playbooks:
     converge: converge.yml
 verifier:
